@@ -107,7 +107,6 @@ export default function Header() {
   }
   // description: 로그인 버튼 클릭 이벤트 //
   const onSignInButtonClickHandler = () => {
-    setLogin(true);
     navigator(AUTH_PATH);
   }
   // description: 마이페이지 버튼 클릭 이벤트 //

@@ -8,7 +8,7 @@ import ResponseDto from 'src/interfaces/response/response.dto';
 import { GetPopularListResponseDto, GetRelationListResponseDto } from 'src/interfaces/response/search';
 import { GetLoginUserResponseDto, GetUserResponseDto, PatchNicknameResponseDto, PatchProfileImageResponseDto } from 'src/interfaces/response/user';
 
-const API_DOMAIN = 'http://52.78.92.140:4040/api/v1';
+const API_DOMAIN = 'http://localhost:4040/api/v1';
 
 const SIGN_UP_URL = () => `${API_DOMAIN}/auth/sign-up`;
 const SIGN_IN_URL = () => `${API_DOMAIN}/auth/sign-in`;
@@ -38,7 +38,7 @@ const PATCH_USER_NICKNAME_URL = () => `${API_DOMAIN}/user/nickname`;
 const PATCH_USER_PROFILE_URL = () => `${API_DOMAIN}/user/profile`;
 
 const GET_SIGN_IN_USER_URL = () => `${API_DOMAIN}/user`;
-const UPLOAD_FILE = () => `http://52.78.92.140:4040/file/upload`;
+const UPLOAD_FILE = () => `http://localhost:4040/file/upload`;
 
 export const signUpRequest = async (data: SignUpRequestDto) => {
   const result = 
